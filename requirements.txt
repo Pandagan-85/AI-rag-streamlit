@@ -9,3 +9,4 @@ tiktoken
 openai
 docx2txt
 pypdf
+pysqlite3-binary
