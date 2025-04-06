@@ -12,7 +12,7 @@ Questo progetto è un'applicazione Streamlit che dimostra l'utilizzo di tecniche
 ## ✨ Caratteristiche
 
 - Interfaccia intuitiva con Streamlit
-- Elaborazione avanzata dei documenti con \* chunking intelligente e memorizzazione vettoriale
+- Elaborazione avanzata dei documenti con chunking intelligente e memorizzazione vettoriale
 - Supporto per documenti multipli (PDF, DOCX, TXT)
 - Domande e risposte basate sul contesto tramite RAG
 - Generazione di riassunti dei documenti
@@ -33,7 +33,7 @@ RAG risolve alcuni dei problemi più significativi dei modelli linguistici tradi
 - Conoscenza limitata o obsoleta del modello base
 - Mancanza di citazioni o riferimenti per le informazioni fornite
 - Allucinazioni (generazione di informazioni inesatte)
-  Costi elevati per il fine-tuning completo dei modelli
+- Costi elevati per il fine-tuning completo dei modelli
 
 ## Nel nostro sistema, RAG funziona così:
 
@@ -53,8 +53,7 @@ Il sistema è progettato specificamente per utilizzare solo le informazioni cont
 - Python - Linguaggio di programmazione principale
 - Streamlit - Framework per l'interfaccia utente
 - LangChain - Framework per la costruzione di applicazioni basate su LLM
-- OpenAI API - Per i modelli GPT (necessita di una chiave API)
-- Hugging Face Embeddings - Per la creazione di embedding vettoriali
+- OpenAI API - Per i modelli GPT e per la creazione di embedding vettoriali
 - Chroma DB - Database vettoriale per l'archiviazione degli embedding
 - PyPDF, Docx2txt - Per l'elaborazione dei documenti
 - RecursiveCharacterTextSplitter - Per il chunking intelligente dei documenti
@@ -86,16 +85,13 @@ Il Meal Planner intelligente offre:
 - Ricerca semantica: Trova ricette simili basate su ingredienti o stili di cucina
 - Q&A sulle ricette: Risposte a domande specifiche sulle ricette caricate
 - Pianificazione pasti: Generazione di piani alimentari personalizzati basati su:
+  - Durata (1 giorno, 3 giorni, 1 settimana)
+  - Pasti per giorno (colazione, pranzo, cena, spuntini)
+  - Preferenze dietetiche (vegetariano, vegano, low-carb, ecc.)
+  - Allergie e restrizioni
+- Generazione lista della spesa: Creazione automatica di liste della spesa organizzate per categoria
 
-      *  Durata (1 giorno, 3 giorni, 1 settimana)
-
-  Pasti per giorno (colazione, pranzo, cena, spuntini)
-  _ Preferenze dietetiche (vegetariano, vegano, low-carb, ecc.)
-  _ Allergie e restrizioni
-
-#### Generazione lista della spesa: Creazione automatica di liste della spesa organizzate per categoria
-
-Come funziona:
+#### Come funziona:
 
 - Le ricette vengono caricate in formato JSON
 - Vengono elaborate e trasformate in embedding vettoriali
@@ -108,7 +104,6 @@ Come funziona:
 Questo progetto è il risultato dell'apprendimento e dell'integrazione di conoscenze acquisite attraverso:
 
 - Il corso "Developing LLM Apps with LangChain" della scuola Zero to Mastery.
-
 - Le lezioni sul RAG tenute da Ilyas Chaoua durante il bootcamp AI Engineer di Edgemony.
 
 L'applicazione dimostra l'applicazione pratica di questi concetti in un prodotto funzionale che affronta problemi reali utilizzando tecniche di intelligenza artificiale all'avanguardia.
