@@ -2,6 +2,11 @@
 import json
 import os
 
+# Fix for sqlite3 version issue - MUST be at the very top before any other imports
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 import streamlit as st
 
 # Updated imports for modern LangChain
