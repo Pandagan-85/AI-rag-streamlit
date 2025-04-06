@@ -1,0 +1,8 @@
+.env
+app_key.py
+myenv
+# Temporary files and data
+temp/
+data/
+
+.DS_Store
